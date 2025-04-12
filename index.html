@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://w7.pngwing.com/pngs/429/946/png-transparent-spotify-streaming-media-podcast-music-playlist-spotify-logo-logo-musician-music-download-thumbnail.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify-Web Player</title>
+</head>
+
+<body>
+    <!-- Toggle Button -->
+    <div class="menu-toggle">☰</div>
+
+    <div class="sidebar">
+        <div class="sidebar-nav">
+            <div class="logo">
+                <a href=""><img src="images/logo-new.png" alt=></a>
+            </div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search albums...">
+
+            
+
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span>Home</span>
+                    </a></li>
+                <li><a href="">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span>Search</span>
+                    </a></li>
+            </ul>
+        </div>
+
+
+        <div class="sidebar-nav box2">
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-book"></i></span>
+                        <span class="library">Your Library</span>
+                    </a></li>
+                <li>
+                    <div class="sidebar-scroll">
+                        <div class="create-playlist">
+                            <h4>Create your first playlist</h4>
+                            <p>It's easy,we'll help you</p>
+                            <button>create Playlist</button>
+                        </div>
+                        <div class="create-playlist">
+                            <h4>Let's find some podcasts to follow</h4>
+                            <p>We'll keep you updated on new episodes</p>
+                            <button>Browse Podcasts</button>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="privacy">
+                <ul>
+                    <li>
+                        <a href="">Legal</a>
+                        <a href="">Safety</a>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                        <a href="">About Ads</a>
+                        <a href="">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="eng-btn">
+                <button><i class="fa-solid fa-globe"></i>   English
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-section">
+        <div class="top-nav">
+            <div class="prev-btn">
+                <button><i class="fa-solid fa-chevron-left"></i></button>
+                <button><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="login-btn">
+                <button class="sign-up">Sign Up</button>
+                <button class="login">Login</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="spotify-playlist">
+            <h2>Popular Albums</h2>
+            <div class="card">
+                <div class="item">
+                    <img src="pics/sanam3.jpg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                    <h4>Sanam Teri Kasam</h4>
+                    <p>Himesh, Sameer Anjaan</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/ashiqui2.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Aashiqui 2</h4>
+                    <p>Mithoon, Ankit Tiwari, Gannuli</p>
+                </div>
+
+                <div class="item">
+                    <img src="pics/glory1.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Glory</h4>
+                    <p>Yo Yo Honey Singh</p>
+                </div>
+
+                <div class="item">
+                    <img src="pics/who1.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Who-Remix</h4>
+                    <p>Jimin</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/mismat2.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Mismatched-Season 3</h4>
+                    <p>Mismatched-cast</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="spotify-playlist">
+            <h2>Popular Artists</h2>
+            <div class="card">
+                <div class="item">
+                    <img src="pics/ar3.jpg" alt="">
+                    <div class="info">
+                        <div class="play-btn" data-src="song/kannalane Enadhu.mp3">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <div class="time-display">00:00</div>
+                    </div>
+                    <h4>A.R.Rahman</h4>
+                    <p>Artist</p>
+                </div>
+
+                <div class="item">
+                    <img src="pics/ani1.jpg" alt="">
+                    <div class="info">
+                        <div class="play-btn" data-src="song/Ethir Neechal - Masstamilan.mp3">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <div class="time-display">00:00</div>
+                    </div>
+                    <h4>Anirudh Ravichandar</h4>
+                    <p>Artist</p>
+                </div>
+
+                <div class="item">
+                    <img src="pics/raja1.jpg" alt="">
+                    <div class="info">
+                        <div class="play-btn" data-src="song/Aattama Therottama - Masstamilan.mp3">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <div class="time-display">00:00</div>
+                    </div>
+                    <h4>Illaiyaraja</h4>
+                    <p>Artist</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/yuvan4.jpg" alt="">
+                    <div class="info">
+                        <div class="play-btn" data-src="song/Adada Mazhaida - Masstamilan.mp3">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <div class="time-display">00:00</div>
+                    </div>
+                    <h4>Yuvan Shankar Raja</h4>
+                    <p>Artist</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/gv2.jpg" alt="">
+                    <div class="info">
+                        <div class="play-btn" data-src="song/Pookal Pookum Tharunam - Masstamilan.mp3">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <div class="time-display">00:00</div>
+                    </div>
+                    <h4>G.V.Prakash</h4>
+                    <p>Artist</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="spotify-playlist">
+            <h2>Featured Charts</h2>
+            <div class="card">
+                <div class="item">
+                    <img src="pics/top 50blue.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Your weekly update of the most played song...</p>
+                </div>
+
+                <div class="item">
+                    <img src="pics/top50yellow.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Your weekly update of the most played song...</p>
+                </div>
+
+                <div class="item">
+                    <img src="pics/viral50 india.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Your weekly update of the most played song...</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/viral50global.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Your weekly update of the most viral track...</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/top100.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Your weekly update of the most viral track...</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="spotify-playlist">
+            <h2>India's Best</h2>
+            <div class="card">
+                <div class="item">
+                    <img src="pics/ipop.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Hottest tracks from your favourite movie I-pop</p>   
+                </div>
+
+                <div class="item">
+                    <img src="pics/bolly.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Bollywood Cntral, jab baje toh seedh...</p>
+                </div>
+
+                <div class="item">
+                    <img src="pics/radar1.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Most exciting artists from the Indian ind...</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/rap1.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>India's Raap scene, Cover-Seedhe Maut</p>
+                </div>
+
+
+                <div class="item">
+                    <img src="pics/punjab1.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p>Ultimate 101 Punjabi hits with Shubh</p>
+                </div>
+
+            </div>
+        </div>
+
+       
+          
+
+          <audio id="audio-player"></audio>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer-section">
+            <div class="footer">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <div>Company</div>
+                        <ul class="col-links">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">For the company</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <div>Communities</div>
+                        <ul class="col-links">
+                            <li><a href="">For Artists</a></li>
+                            <li><a href="">Developers</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Vendors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <div>Useful links</div>
+                        <ul class="col-links">
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Free mobile app</a></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-column">
+                        <div>Spotify Plans</div>
+                        <ul class="col-links">
+                            <li><a href="">Premium Individual</a></li>
+                            <li><a href="">Premium Duo</a></li>
+                            <li><a href="">Premium Family</a></li>
+                            <li><a href="">Premium Student</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <div class="social-links">
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class="copyright">&copy;2025 Spotify BK</p>
+        </div>
+    </div>
+
+    <div class="preview">
+        <div class="text">
+            <h4>Preview of Spotify</h4>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+
+        <div class="button">
+            <button>Sign Up for Free</button>
+        </div>
+    </div>
+
+  
+    
+
+   
+
+
+
+    <!-- Modal Overlay (Background Blur) -->
+<div id="modalOverlay" class="modal-overlay"></div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSignup()">&times;</span>
+        <h2>Sign Up</h2>
+        <input type="text" id="signupUsername" placeholder="Username">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button onclick="signup()">Sign Up</button>  <!-- FIXED -->
+        <p>Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>  <!-- FIXED -->
+        <p>Don't have an account? <a href="#" onclick="switchToSignup()">Sign Up</a></p>
+
+        <!-- Success Notification -->
+        <div id="loginSuccess" style="display: none; color: green; font-weight: bold;">
+            Login Successful!
+        </div>
+    </div>
+</div>
+
+<!-- Logout Button -->
+<button id="logoutBtn" style="display:none;" onclick="logout()">Logout</button>
+
+
+  
+  
+
+    <script src="script.js" defer></script>
+
+    
+    
+
+    
+    </div>
+   
+</body>
+</html>
